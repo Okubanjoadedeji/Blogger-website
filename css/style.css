@@ -1,0 +1,301 @@
+
+@import url('../css/fonts.css');
+
+
+html,body{
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*---------------------------- GLOBAL CLASSES ----------------------*/
+
+a{ 
+  text-decoration: none;
+  color: var(--text-grey),
+}
+
+ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li{
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  cursor: pointer;
+}
+
+h1{
+  font-family: var(--lexend);
+  font-size: var(--font-display);
+}
+
+h2{
+  font-family: var(--lexend);
+}
+
+h3{
+  font-family: var(--abel);
+  font-size: var(--font-sm);
+}
+
+button.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--livvic);
+  cursor: pointer;
+}
+
+span{
+  font-family: var(--abel);
+}
+
+.container{
+  margin: 0 5vw;
+}
+
+/*--------XXXXXXXX------------ GLOBAL CLASSES -------XXXXXXXX-------*/
+
+
+
+:root{
+  /*---------------- FONT ---------------*/
+  --abel: 'Abel',cursive;
+  --anton: 'Anton',cursive;
+  --josefin: 'Josefin',cursive;
+  --lexend: 'Lexend',cursive;
+  --livvic:'Livvic',cursive;
+  
+  /*----------------THEME COLORS ---------------*/
+  --offWhite: #f5f5f5;
+  --text-secondary: #707072;
+  --text-primary: #111111;
+  --white: #ffffff;
+  --text-grey: #3f4954;
+  --text-light: #6a6666da;
+  --bg: #0f0f0f;
+  --midnight: #104f55;
+
+  /*----------------- GRADIENT COLOR -------------*/
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+
+  /*----------------- SIZE --------------- */
+  --font-span: 8px;
+  --font-xs: 12px;
+  --font-sm: 1.3rem;
+  --font-display:2.5rem;
+  --font-icon: 1.4rem;
+  --font-h3: 1.6rem;
+  --font-h4: 1.1rem;
+}
+
+/*--------------------------- UTILITY CLASSES ----------------------*/
+
+.display{ font-family: var(--display);}
+.flex{ display: flex;}
+.flex-row{ flex-direction: row;}
+.flex-wrap{ flex-wrap: wrap;}
+.block{ display: block;}
+.inline-flex{ display: inline-flex;}
+.inline-block{ display: inline-block;}
+.relative{ position: relative;}
+.absolute{ position: absolute;}
+.space-between{ justify-content: space-between;}
+.justify-center{ justify-content: center;}
+.flex-end{ justify-content: flex-end;}
+.align-center{align-items: center;}
+.text-center{ text-align: center;}
+
+
+.bg-1{background-color: var(--bg);}
+.text-primary{ color: var(--text-primary);}
+.text-secondary{ color: var(--text-secondary);}
+.text-underline{ text-decoration: underline;}
+.white{ color: var(--white);}
+
+.abel{ font-family: var(--abel);}
+.anton{ font-family: var(--anton);}
+.josefin{ font-family: var(--josefin);}
+.livvic{ font-family: var(--livvic);}
+.lexend{ font-family: var(--lexend);}
+.font-span{ font-size: var(--font-span);}
+.font-xs{ font-size: var(--font-xs);}
+.font-sm{ font-size: var(--font-sm);}
+.font-body{ font-size: var(--font-body);}
+.font-display{ font-size: var(--font-display);}
+.font-h3{ font-size: var(--font-h3);}
+.font-h4{ font-size: var(--font-h4);}
+
+.w-full{ width: 100%;}
+.w-half{ width: 50%;}
+.h-full{ height: 100%;}
+
+
+
+
+/*------------------------------- NAVIGATION-----------------------------*/
+
+.nav{
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  transition: height 1s ease-in-out;
+}
+
+.nav .nav-brand a{
+  padding: 1rem 0;
+  font-family: var(--lexend);
+}
+
+.nav .toggle-collapse{
+  top: 0%;
+  cursor: pointer;
+  width: 90%;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.collapse{
+  height: 30rem;
+}
+
+
+.nav .nav-items{
+  margin: 0;
+}
+
+.nav .nav-items .nav-link{
+  padding: 1.6rem 1rem;
+  font-family: var(--abel);
+  font-size: var(--font-h4);
+  position: relative;
+}
+
+.nav .nav-items .nav-link:hover{
+  background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+  color: var(--white);
+}
+
+.nav .social{
+  padding: 1.4rem 0;
+}
+
+.nav .social i{
+  padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+  color: #a1c4cf;
+}
+
+/*-----------XXXXXXXX------------ NAVIGATION--------XXXXXXXX-------------*/
+
+
+/*----------------------------- MAIN SITE SECTION -----------------------*/
+
+  /*--------------- SITE TITLE -----------*/
+
+  main .site-title{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  main .site-title .site-background{
+    margin-top: 10rem;
+    color: var(--white);
+  }
+
+  main .site-title h1,h3{
+    margin: .3rem;
+  }
+
+  main .site-title .btn{
+    background: var(--sky);
+    margin: 1.8rem;
+  }
+
+  main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+
+  /*------XXXX---- SITE TITLE ----XXXX----*/
+
+
+  /*--------------- BLOG CAROUSEL -----------*/
+
+  main .blog{
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    background-size: 65%;
+  }
+
+  main .blog .blog-post{
+    padding-top: 6rem;
+  }
+
+  main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  main .blog-content .blog-title{
+    padding: 2rem 0;
+  }
+
+  main .blog-title .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+  }
+
+  /*------XXXX---- BLOG CAROUSEL ----XXXX----*/
+  
+
+/*---------XXXXXXXX------------ MAIN SITE SECTION --------XXXXXXXX--------*/
+
+
+/*             VIEWPORT LESS THAN OR EQUAL TO 750PX             */
+@media only screen and (max-width:750px){
+  .nav .nav-menu,.nav .nav-items{
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse{
+    display: initial;
+  }
+
+}
+
+/*  XXXXXXXX   VIEWPORT LESS THAN OR EQUAL TO 750PX    XXXXXXXX  */
+
+
+
+
+
+
+
+
