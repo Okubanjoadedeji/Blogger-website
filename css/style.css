@@ -516,11 +516,51 @@ footer.footer .rights{
 footer.footer .rights h4 a{
   color: var(--offWhite);
 }
+
+footer.footer .move-up{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span{
+  color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+  color: var(--offWhite);
+  cursor: pointer;
+}
+
 /*---------XXXXXXXX------------  FOOTER --------XXXXXXXX--------*/
 
 
+
+
+/*             VIEWPORT LESS THAN OR EQUAL TO 1130PX             */
+@media only screen and (max-width: 1130px) {
+
+ .site-content .post-content>.post-image .post-info {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0% !important;
+  }
+  
+  .site-content .sidebar .popular-post .post-info {
+    display: none !important;
+  }
+
+    footer.footer .container{
+      grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*  XXXXXXXX   VIEWPORT LESS THAN OR EQUAL TO 1130PX    XXXXXXXX  */
+
+
+
 /*             VIEWPORT LESS THAN OR EQUAL TO 750PX             */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width : 750px) {
 
   .nav .nav-menu,
   .nav .nav-items {
@@ -530,6 +570,43 @@ footer.footer .rights h4 a{
   .nav .toggle-collapse {
     display: initial;
   }
+  
+ main .site-content {
+  grid-template-columns: 100%;
+ }
+
+ footer.footer .container {
+   grid-template-columns: repeat(1, 1fr);
+ }
+
+}
+/*  XXXXXXXX   VIEWPORT LESS THAN OR EQUAL TO 750PX    XXXXXXXX  */
+
+
+/*             VIEWPORT LESS THAN OR EQUAL TO 520PX             */
+@media only screen and (max-width : 520px) {
+
+  main .blog{
+    height: 125vh;
+  }
+
+  .site-content .post-content>.post-image .post-info {
+    display: none;
+  }
+
+  footer.footer .container>div{
+    padding: 1rem .9rem !important;
+  }
+
+  footer .rights{
+    padding: 0 1.4rem;
+    text-align: center;
+  }
+
+  nav .toggle-collapse{
+    width: 80% !important;
+  }
+
 }
 
-/*  XXXXXXXX   VIEWPORT LESS THAN OR EQUAL TO 750PX    XXXXXXXX  */
+/*  XXXXXXXX   VIEWPORT LESS THAN OR EQUAL TO 520PX    XXXXXXXX  */
