@@ -1,7 +1,7 @@
 $(document).ready(function(){  
   
-  $nav = $('.nav');
-  $toggleCollapse = $('.toggle-collapse')
+  const $nav = $('.nav');
+  const $toggleCollapse = $('.toggle-collapse')
 
 
  /* ------------- click event on toggle menu ---------*/
@@ -12,10 +12,12 @@ $(document).ready(function(){
   //Owl carousel for blob
   $('.owl-carousel').owlCarousel({
     loop:true,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout: 3000,
-    dot: false,
+    dots: false,
     nav: true,
+    navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next') ]
+
   });
 
 
