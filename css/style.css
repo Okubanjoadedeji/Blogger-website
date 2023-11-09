@@ -152,14 +152,14 @@ p {
 }
 
 .nav .nav-brand a {
-  padding: 1rem 0;
+  padding: 1.1rem 0;
   font-family: var(--lexend);
 }
 
 .nav .toggle-collapse {
   top: 0%;
   cursor: pointer;
-  width: 90%;
+  left: 96%;
   display: none;
 }
 
@@ -604,7 +604,7 @@ footer.footer .move-up span:hover{
   }
 
   nav .toggle-collapse{
-    width: 80% !important;
+    right: 4%;
   }
 
 }
